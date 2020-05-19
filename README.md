@@ -7,18 +7,18 @@
 <br>
 
 
-- Deepak Malempati
+- DM
 
 <br>
 
-- Deepthi Tejaswani Chokka
+- DTC
 
 <br>
 
-- Dheeraj Edupuganti
+- DE
 
 <br>
 
-- Maha Lakshmi Kongari
+- MH
 
 
