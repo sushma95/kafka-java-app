@@ -21,8 +21,10 @@
 
 <br>
 
-### DE
+### Dheeraj Edupuganti
 
+- [Dheeraj's GitHub Profile Link](https://github.com/Dheeraj0327)
+ 
 <br>
 
 ### Maha Lakshmi Kongari
