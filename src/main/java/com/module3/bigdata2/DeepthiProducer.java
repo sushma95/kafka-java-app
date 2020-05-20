@@ -44,7 +44,7 @@ public class DeepthiProducer {
       producer.send(rec);
     }
 
-    //Converting the input string to Upper-Case Charaters
+    //Converting the input string to Upper-Case Characters
 
     String input = in.nextLine();
     while (!input.equals("exit")) {

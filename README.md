@@ -19,6 +19,7 @@
 ### Deepthi Tejaswani Chokka
 
 - [Deepthi's GitHub Profile Link](https://github.com/Deepthi1003)
+- I have created a Producer named DeepthiProducer.java which is  message 5 times wherein each message tells about how the structure of the sentence should be and converted the input string to Upper-Case Characters
 
 <br>
 
