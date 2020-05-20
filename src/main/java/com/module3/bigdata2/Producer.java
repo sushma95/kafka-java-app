@@ -35,7 +35,7 @@ public class Producer
         String line = in.nextLine();
         while(!line.equals("exit")) {
 
-            //It provides the messages in uppercase
+            //It provides the messages in uppercase to the consumer
 
             ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line.toUpperCase());
             producer.send(rec);
