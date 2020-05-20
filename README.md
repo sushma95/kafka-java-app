@@ -33,7 +33,7 @@
 
 ### Maha Lakshmi Kongari
 - [Maha Lakshmi's Github Profile Link](https://github.com/MAHALAKSHMIKONGARI)
-- I have created Producer to improves the communication from producer to consumer.  
+- I have created Producer to communicate the message to the consumer in uppercase.  
 
 ## To start the zookeeper server:
 
