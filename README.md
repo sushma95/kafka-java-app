@@ -5,7 +5,7 @@
 ### Sushma Yedugani(Team Lead)
 
 - [Sushma GitHub Profile Link](https://github.com/sushma95)
-- I have created a Custom Consumer app to display the output of the cutom producers.
+- I have created a Custom Consumer app to display the output of the custom producers.
 
 
 <br>
@@ -31,7 +31,7 @@
 
 ### Maha Lakshmi Kongari
 - [Maha Lakshmi's Github Profile Link](https://github.com/MAHALAKSHMIKONGARI)
-
+- I have created Producer to improves the communication from producer to consumer.  
 
 ## To start the zookeeper server:
 
