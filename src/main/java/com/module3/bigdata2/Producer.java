@@ -31,12 +31,13 @@ public class Producer
         configProperties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,"org.apache.kafka.common.serialization.StringSerializer");
 
         org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
+
         String line = in.nextLine();
         while(!line.equals("exit")) {
 
             //TODO: Make sure to use the ProducerRecord constructor that does not take parition Id
 
-            ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line);
+            ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line.toUpperCase());
             producer.send(rec);
             line = in.nextLine();
         }
