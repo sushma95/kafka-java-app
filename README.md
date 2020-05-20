@@ -5,6 +5,7 @@
 ### Sushma Yedugani(Team Lead)
 
 - [Sushma GitHub Profile Link](https://github.com/sushma95)
+- I have created a Custom Consumer app to display the output of the custom producers.
 
 
 <br>
@@ -12,12 +13,13 @@
 
 ### Deepak Malempati
 - [Deepak's GitHub Profile link](https://github.com/Deepakmalempati)
-
+- I have created ProducerCards to input card type and remove and left over cards.  
 <br>
 
 ### Deepthi Tejaswani Chokka
 
 - [Deepthi's GitHub Profile Link](https://github.com/Deepthi1003)
+- I have created a Producer named DeepthiProducer.java which is  message 5 times wherein each message tells about how the structure of the sentence should be and converted the input string to Upper-Case Characters
 
 <br>
 
@@ -29,7 +31,7 @@
 
 ### Maha Lakshmi Kongari
 - [Maha Lakshmi's Github Profile Link](https://github.com/MAHALAKSHMIKONGARI)
-
+- I have created Producer to improves the communication from producer to consumer.  
 
 ## To start the zookeeper server:
 

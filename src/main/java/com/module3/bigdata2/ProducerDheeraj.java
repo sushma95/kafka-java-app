@@ -1,4 +1,4 @@
-package com.module3.bigdata2;
+package com.module3.bigdata2
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -8,7 +8,7 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
-public class DeepthiProducer {
+public class ProducerDheeraj{
 
   private static Scanner in;
 
@@ -34,23 +34,21 @@ public class DeepthiProducer {
 
     org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
-    // Make our own messages - create your custom logic here
+    // My custom logic 
 
-    // Displaying message 5 times wherein each message tells about how the structure of the sentence should be.
-
-    for (int i = 1; i <= 5; i++) {
-      String message = generalMessage() + i + messageStructure();
+    for (int i = 1; i <= 1; i++) {
+      String message = createIntials();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
 
-    //Converting the input string to Upper-Case Characters
+    // still allow input from keyboard
 
-    String input = in.nextLine();
-    while (!input.equals("exit")) {
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, "The String after converting the characters to UpperCase:"+input.toUpperCase());
+    String line = in.nextLine();
+    while (!line.equals("exit")) {
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, line);
       producer.send(rec);
-      input = in.nextLine();
+      line = in.nextLine();
     }
 
     in.close();
@@ -58,12 +56,13 @@ public class DeepthiProducer {
 
   }
 
-   private static String generalMessage() {
-    return "Message:";
-  }
-
-  private static String messageStructure() {
-    return "->Structure of sentence: Noun Verb Subject. ";
-  }
-
+   private static String createIntials() {
+        String str = "Dheeraj Kumar";
+        String startLetter = "";
+        String[] intials = str.split(" ");
+        for (String i : intials) {
+            startLetter += i.charAt(0);
+        }
+        return "Intial is " +startLetter;
+    }
 }
