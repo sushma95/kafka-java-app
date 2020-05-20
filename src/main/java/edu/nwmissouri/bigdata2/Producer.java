@@ -10,7 +10,9 @@ import java.util.Scanner;
 /**
  * Created by sunilpatil on 12/28/15.
  */
-public class Producer {
+
+public class Producer 
+{
     private static Scanner in;
     public static void main(String[] argv)throws Exception {
         if (argv.length != 1) {
