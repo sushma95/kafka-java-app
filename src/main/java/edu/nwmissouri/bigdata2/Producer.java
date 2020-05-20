@@ -1,4 +1,4 @@
-package com.spnotes.kafka.simple;
+package edu.nwmissouri.bigdata2;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
