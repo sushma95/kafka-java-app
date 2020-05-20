@@ -26,6 +26,8 @@
 ### Dheeraj Edupuganti
 
 - [Dheeraj's GitHub Profile Link](https://github.com/Dheeraj0327)
+
+- I have created ProducerDheeraj which will print the intials of a given name.
  
 <br>
 
