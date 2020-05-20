@@ -8,7 +8,7 @@ import java.util.Properties;
 import java.util.Random;
 import java.util.Scanner;
 
-public class ProducerSentence {
+public class DeepthiProducer {
 
   private static Scanner in;
 

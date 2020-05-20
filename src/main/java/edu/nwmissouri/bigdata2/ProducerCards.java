@@ -22,7 +22,7 @@ public class ProducerCards {
     String topic = argv[0];
     scan = new Scanner(System.in);
     System.out.println("Your topic name is: " + topic + "\n");
-    System.out.println("Enter your word: \n");
+    System.out.println("Enter your card: \n");
 
     // Configure the Producer
     Properties configProperties = new Properties();
@@ -38,17 +38,11 @@ public class ProducerCards {
 
     // Make our own messages - create your custom logic here
 
-    for (int i = 1; i <= 5; i++) {
-      String message = "Spades" + i;
-      ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, message);
-      producer.send(record);
-    }
-
-   
 
     String inputline = scan.nextLine();
+   
     while (!inputline.equals("exit")) {
-      ProducerRecord<String, String> record1 = new ProducerRecord<String, String>(topic, inputline);
+      ProducerRecord<String, String> record1 = new ProducerRecord<String, String>(topic, "Your card is"+inputline);
       producer.send(record1);
       inputline = scan.nextLine();
     }
