@@ -36,11 +36,15 @@ public class ProducerSentence {
 
     // Make our own messages - create your custom logic here
 
-    for (int i = 0; i <= 10; i = i + 2) {
-      String message = generalMessage() + messageStructure();
+    // Displaying message 5 times wherein each message tells about how the structure of the sentence should be.
+
+    for (int i = 1; i <= 5; i++) {
+      String message = generalMessage() + i + messageStructure();
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
+
+    //Converting the input string to Upper-Case Charaters
 
     String input = in.nextLine();
     while (!input.equals("exit")) {
@@ -49,14 +53,12 @@ public class ProducerSentence {
       input = in.nextLine();
     }
 
-    // still allow input from keyboard
-
    private static String generalMessage() {
-    return " Structure of sentence: ";
+    return "Message:";
   }
 
   private static String messageStructure() {
-    return " Noun Verb Subject. ";
+    return "->Structure of sentence: Noun Verb Subject. ";
   }
 
     in.close();
@@ -64,7 +66,4 @@ public class ProducerSentence {
 
   }
 
-  private static String createSentence() {
-    return "Noun verb subject.";
-  }
 }
