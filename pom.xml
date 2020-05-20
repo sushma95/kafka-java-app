@@ -60,7 +60,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>edu.nwmissouri.isl.Sushma.kafka.CustomProducer</mainClass>
+              <mainClass>edu.nwmissouri.bigdata2.Producer</mainClass>
             </manifest>
           </archive>
           <descriptorRefs>
