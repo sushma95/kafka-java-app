@@ -10,7 +10,8 @@
 <br>
 
 
-### DM
+### Deepak Malempati
+- [Deepak's GitHub Profile link](https://github.com/Deepakmalempati)
 
 <br>
 
@@ -20,10 +21,14 @@
 
 <br>
 
-### DE
+### Dheeraj Edupuganti
 
+- [Dheeraj's GitHub Profile Link](https://github.com/Dheeraj0327)
+ 
 <br>
 
-### MH
+### Maha Lakshmi Kongari
+- [Maha Lakshmi's Github Profile Link](https://github.com/MAHALAKSHMIKONGARI)
+
 
 
