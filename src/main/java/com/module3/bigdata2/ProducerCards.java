@@ -1,4 +1,4 @@
-package edu.nwmissouri.bigdata2;
+package com.module3.bigdata2;
 
 
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -38,12 +38,17 @@ public class ProducerCards {
 
     // Make our own messages - create your custom logic here
 
+    for (int i = 1; i <= 5; i++) {
+        String message = "Spades" + i;
+        ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topic, message);
+        producer.send(rec);
+      }
 
     String inputline = scan.nextLine();
    
     while (!inputline.equals("exit")) {
-      ProducerRecord<String, String> record1 = new ProducerRecord<String, String>(topic, "Your card is"+inputline);
-      producer.send(record1);
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topic, "Your card is: "+inputline);
+      producer.send(rec);
       inputline = scan.nextLine();
     }
 

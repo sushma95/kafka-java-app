@@ -1,4 +1,4 @@
-package edu.nwmissouri.bigdata2;
+package com.module3.bigdata2;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
