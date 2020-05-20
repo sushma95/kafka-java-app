@@ -40,7 +40,7 @@ public class ProducerCards {
 
     for (int i = 1; i <= 5; i++) {
       String message = "Spades" + i;
-      ProducerRecord<String, String> record = new ProducerRecord<String, String>(topicName, message);
+      ProducerRecord<String, String> record = new ProducerRecord<String, String>(topic, message);
       producer.send(record);
     }
 
@@ -48,8 +48,8 @@ public class ProducerCards {
 
     String inputline = scan.nextLine();
     while (!inputline.equals("exit")) {
-      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, inputline);
-      producer.send(rec);
+      ProducerRecord<String, String> record1 = new ProducerRecord<String, String>(topic, inputline);
+      producer.send(record1);
       inputline = scan.nextLine();
     }
 
