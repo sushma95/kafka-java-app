@@ -35,7 +35,7 @@ public class Producer
         String line = in.nextLine();
         while(!line.equals("exit")) {
 
-            //TODO: Make sure to use the ProducerRecord constructor that does not take parition Id
+            //It provides the messages in uppercase
 
             ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line.toUpperCase());
             producer.send(rec);
