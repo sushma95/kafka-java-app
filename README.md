@@ -54,6 +54,9 @@
 - Open PowerShell as Administrator in the root project folder, start the producer app using the below commands,
 
 ```java -cp target/kafka-api-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.Producer test```
+
 ```java -cp target/kafka-api-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.DeepthiProducer test```
+
 ```java -cp target/kafka-api-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.ProducerCards test```
+
 ```java -cp target/kafka-api-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.DheerajProducer test```
