@@ -24,6 +24,7 @@ public class Producer
         System.out.println("Enter message(type exit to quit)");
 
         //Configure the Producer
+
         Properties configProperties = new Properties();
         configProperties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092");
         configProperties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,"org.apache.kafka.common.serialization.ByteArraySerializer");
@@ -32,7 +33,9 @@ public class Producer
         org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
         String line = in.nextLine();
         while(!line.equals("exit")) {
+
             //TODO: Make sure to use the ProducerRecord constructor that does not take parition Id
+
             ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line);
             producer.send(rec);
             line = in.nextLine();
