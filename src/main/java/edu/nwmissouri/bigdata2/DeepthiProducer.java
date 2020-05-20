@@ -53,17 +53,17 @@ public class DeepthiProducer {
       input = in.nextLine();
     }
 
+    in.close();
+    producer.close();
+
+  }
+
    private static String generalMessage() {
     return "Message:";
   }
 
   private static String messageStructure() {
     return "->Structure of sentence: Noun Verb Subject. ";
-  }
-
-    in.close();
-    producer.close();
-
   }
 
 }
