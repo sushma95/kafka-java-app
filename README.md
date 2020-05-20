@@ -13,7 +13,7 @@
 
 ### Deepak Malempati
 - [Deepak's GitHub Profile link](https://github.com/Deepakmalempati)
-
+- I have created ProducerCards to input card type and remove and left over cards.  
 <br>
 
 ### Deepthi Tejaswani Chokka
