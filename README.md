@@ -63,4 +63,4 @@
 
 ```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.ProducerCards test```
 
-```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.DheerajProducer test```
+```java -cp target/kafka-java-app-1.0-SNAPSHOT-jar-with-dependencies.jar com.module3.bigdata2.ProducerDheeraj test```
