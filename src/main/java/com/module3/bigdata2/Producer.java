@@ -32,12 +32,22 @@ public class Producer
 
         org.apache.kafka.clients.producer.Producer producer = new KafkaProducer(configProperties);
 
+
+ for (int i = 1; i <= 5; i++) 
+    {
+      String message = " **** Testing " + i + "**** ";
+      ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
+      producer.send(rec);
+    }
+
+
         String line = in.nextLine();
         while(!line.equals("exit")) {
 
             //It provides the messages in uppercase to the consumer
 
-            ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName,line.toUpperCase());
+            ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, "You have a message :"
++line.toUpperCase());
             producer.send(rec);
             line = in.nextLine();
         }
