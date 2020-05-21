@@ -1,4 +1,4 @@
-package com.module3.bigdata2
+package com.module3.bigdata2;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;
@@ -36,8 +36,9 @@ public class ProducerDheeraj{
 
     // My custom logic 
 
-    for (int i = 1; i <= 1; i++) {
+    for (int i = 1; i <= 5; i++) {
       String message = createIntials();
+     message +=" "+i;
       ProducerRecord<String, String> rec = new ProducerRecord<String, String>(topicName, message);
       producer.send(rec);
     }
@@ -58,6 +59,7 @@ public class ProducerDheeraj{
 
    private static String createIntials() {
         String str = "Dheeraj Kumar";
+	  
         String startLetter = "";
         String[] intials = str.split(" ");
         for (String i : intials) {
